@@ -4,9 +4,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+
 
     
 public class Connessione {
@@ -35,24 +33,8 @@ public class Connessione {
         String message = new String(bytes, 0, length);
         System.out.println("Messaggio ricevuto dal server: " + message);
         socket.close();
+        Mappa.Ospite = true;
     }
-
-        @FXML
-        private Button ButtonClient;
-    
-        @FXML
-        private Button ButtonServer;
-    
-        @FXML
-        void SetClient(ActionEvent event) throws IOException {
-            Connessione.Client();
-        }
-    
-        @FXML
-        void SetServer(ActionEvent event) throws IOException {
-            Connessione.Server();
-        }
-
     }
     
     

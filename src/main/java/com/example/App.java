@@ -13,9 +13,9 @@
         @Override
         public void start(Stage stage) throws IOException {
 
-            scene = new Scene(loadFXML("Menu_connessione"), 600, 400);
-            stage.setScene(scene);
-            stage.show();
+        //    scene = new Scene(loadFXML("Menu_connessione"), 600, 400);
+        //    stage.setScene(scene);
+        //    stage.show();
 
             scene = new Scene(loadFXML("wee"), 400, 400);
             stage.setScene(scene);

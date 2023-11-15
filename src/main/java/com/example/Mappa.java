@@ -37,11 +37,7 @@ public class Mappa {
                     Finito = true;
                 }
 
-
-
                 if (Turno_Di == 'X') Turno_Di = 'O'; else Turno_Di = 'X'; //Scambio di turno
-
-
 
             if (Turno_Numero > 9) {System.out.println("Avete finito le mosse");} //TODO: Non poter ripremere lo stesso tasto
             Turno_Numero++;
